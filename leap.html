@@ -2,14 +2,17 @@
 <html>
 <head>
     <title>Leap Year Checker</title>
-    <link rel="stylesheet" href="leap.css">
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
 </head>
 <body>
     <h1>Leap Year Checker</h1>
-    <form action="leap.php" method="put">
+    <form action="/" method="post">
         <label for="year">Enter a year:</label>
         <input type="number" id="year" name="year" required>
         <button type="submit">Check</button>
     </form>
+    {% if result %}
+        <p><strong>{{ result }}</strong></p>
+    {% endif %}
 </body>
 </html>
