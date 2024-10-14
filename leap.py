@@ -23,9 +23,9 @@ def index():
             result = f"{year} is a leap year."
         else:
             result = f"{year} is not a leap year."
-        return render_template('index.html', result=result)
+        return render_template('leap.html', result=result)
     else:
-        return render_template('index.html')
+        return render_template('leap.html')
 
 if __name__ == '__main__':
     app.run(debug=True)
