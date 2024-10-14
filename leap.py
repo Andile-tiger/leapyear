@@ -14,7 +14,7 @@ def is_leap_year(year):
     else:
         return False
 
-@app.route('/', methods=['GET', 'POST'])
+@app.route('leap.html', methods=['GET', 'POST'])
 def index():
     if request.method == 'POST':
         year = int(request.form['year'])
