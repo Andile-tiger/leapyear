@@ -1,6 +1,6 @@
 <?php
 // Get the entered year from the form
-$year = $_POST['year'];
+$year = $_GET['year'];
 
 // Check if the year is divisible by 4
 if ($year % 4 == 0) {
